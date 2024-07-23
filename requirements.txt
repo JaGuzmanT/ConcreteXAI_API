@@ -1,7 +1,7 @@
-numpy==1.25.0
-pandas==1.5.3
-scikit_learn==1.2.2
-streamlit==1.36.0
-streamlit_extras==0.4.3
-streamlit_lottie==0.0.5
-tensorflow==2.10.0
+numpy
+pandas
+scikit_learn
+streamlit
+streamlit_extras
+streamlit_lottie
+tensorflow
