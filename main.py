@@ -42,7 +42,7 @@ st.subheader("Features:")
 F_design = st.number_input(label="Design F'c (MPa):", value=None, placeholder="Type a number", min_value=0.0, max_value=100.00)
 Edad_curado = st.number_input(label="Curing Age (Days]):", value=None, placeholder="Type a number", min_value=0, max_value=100, step=1)
 Er = st.number_input(label="Electrical Resistivity (Ω-cm):", value=None, placeholder="Type a number", min_value=0.00, max_value=20.00, step=1.00)
-Ultras = st.number_input(label="Ultrasonic Pulse Velicty (m/s):", value=None, placeholder="Type a number", min_value=0.00, max_value=6000.00, step=0.01)
+Ultras = st.number_input(label="Ultrasonic Pulse Velicty (m/s):", value=None, placeholder="Type a number", min_value=0.00, max_value=6000.00, step=100.00)
 st.divider()
 #######################################################################################
 # Creating the button to calculate the Cs
