@@ -20,7 +20,7 @@ st.sidebar.title(":green[ConcreteXAI API]")
 st.logo("images/logo_1.png")
 
 # Defining variables for the images of the interface
-image_1 = "Images/logo_1.png"
+image_1 = "Images/logo_1.jpg"
 image_2 = "Images/UMSNH.jpg"
 image_3 = "Images/civil.jpg"
 
