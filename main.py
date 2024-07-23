@@ -10,7 +10,7 @@ from streamlit_extras import add_vertical_space as avs
 from streamlit_lottie import st_lottie 
 
 st.set_page_config(page_title="ConcreteXAI",
-                   page_icon="images/logo_1.png",
+                   page_icon="images/logo_1.jpg",
                    layout="wide",
                    initial_sidebar_state="auto")
 
