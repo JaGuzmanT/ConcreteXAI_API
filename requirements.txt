@@ -5,4 +5,3 @@ streamlit==1.36.0
 streamlit_extras==0.4.3
 streamlit_lottie==0.0.5
 tensorflow==2.10.0
-~treamlit==1.32.2
