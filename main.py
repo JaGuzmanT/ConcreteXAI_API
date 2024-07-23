@@ -17,7 +17,7 @@ st.set_page_config(page_title="ConcreteXAI",
 #######################################################################################
 # Sidebar interface and its elements
 st.sidebar.title(":green[ConcreteXAI API]")
-st.logo("images/logo_1.png")
+# st.logo("images/logo_1.png")
 
 # Defining variables for the images of the interface
 image_1 = "Images/logo_1.jpg"
