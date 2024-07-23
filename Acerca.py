@@ -12,7 +12,7 @@ st.set_page_config(page_title="ConcreteXAI",
 #######################################################################################
 # Sidebar interface and its elements
 st.sidebar.title(":green[ConcreteXAI API]")
-st.logo(image="images/logo_1.png", icon_image="images/logo_1.png")
+# st.logo("images/logo_1.png")
 
 st.sidebar.image(image="Images/logo_1.png", caption="IngenierIA Soluciones", width=150)
 st.sidebar.image(image="Images/UMSNH.jpg", caption="UMSNH", width=150)
