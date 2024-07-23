@@ -4,4 +4,4 @@ scikit_learn
 streamlit==1.36.0
 streamlit_extras
 streamlit_lottie
-tensorflow==2.10.0
+tensorflow==2.11.0
