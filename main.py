@@ -14,6 +14,19 @@ st.set_page_config(page_title="ConcreteXAI",
                    layout="wide",
                    initial_sidebar_state="auto")
 
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+st.title("Concrete Dataset Analizer")
+st.write("This application is an interactive app for analyzing a custom dataset")
+st.write(
+    """---""")
+
 #######################################################################################
 # Sidebar interface and its elements
 st.sidebar.title(":green[ConcreteXAI API]")
