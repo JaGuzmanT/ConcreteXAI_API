@@ -97,4 +97,4 @@ if Calculate_button:
 # Registered trend section
 regist = "<h4 style = 'text-align:center'> © ConcreteXAI </h4>"
 avs.add_vertical_space(8)
-st.markdown(regist, unsafe_allow_html=True)
+st.write(regist, unsafe_allow_html=True)
