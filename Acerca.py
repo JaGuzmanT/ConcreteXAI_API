@@ -41,7 +41,6 @@ st.sidebar.image(image="Images/civil.jpg", caption="Facultad de Ingeniería Civi
 #######################################################################################
 # App interface
 st.title(":blue[Resources]", anchor=False)
-st.write("_This application is an interactive webapp for predicting the concrete performance using Non-destructive tests_")
 st.divider()
 #######################################################################################
 # Information about the application
