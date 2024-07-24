@@ -14,9 +14,9 @@ st.set_page_config(page_title="ConcreteXAI",
 st.sidebar.title(":green[ConcreteXAI API]")
 # st.logo("images/logo_1.png")
 
-st.sidebar.image(image="Images/logo_1.png", caption="IngenierIA Soluciones", width=150)
-st.sidebar.image(image="Images/UMSNH.jpg", caption="UMSNH", width=150)
-st.sidebar.image(image="Images/civil.jpg", caption="Facultad de Ingeniería Civil", width=150)  
+st.sidebar.image(image="Images/logo_1.png", caption="IngenierIA Soluciones", width=100)
+st.sidebar.image(image="Images/UMSNH.jpg", caption="UMSNH", width=100)
+st.sidebar.image(image="Images/civil.jpg", caption="Facultad de Ingeniería Civil", width=100)  
 #######################################################################################
 # App interface
 st.title(":blue[Resources]")
