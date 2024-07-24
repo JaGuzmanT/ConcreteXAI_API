@@ -23,7 +23,7 @@ st.title(":blue[Resources]", anchor=False)
 st.divider()
 #######################################################################################
 # Information about the application
-st.subheader("Info", divider="rainbow")
+st.subheader("Info", divider="rainbow", anchor=False)
 with st.expander(label="About ConcreteXAI API"):
     # Defining variables for the texts
     Objetivo = "<h6 style = 'text-align: justify'> The objective of the ConcreteXAI API is to provide an accurate application that allows for the prediction of concrete compressive strength using artificial intelligence techniques. This API is designed for civil engineers, researchers, and professionals in the construction field who seek to optimize concrete mix design and evaluate its performance without the need for destructive testing. </h6>"
