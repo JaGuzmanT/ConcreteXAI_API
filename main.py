@@ -8,39 +8,11 @@ from sklearn.preprocessing import StandardScaler
 from tensorflow.keras.models import load_model  # type: ignore
 from streamlit_extras import add_vertical_space as avs
 from streamlit_lottie import st_lottie 
-hide_github_icon = """
 
-.css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob, .styles_viewerBadge__1yB5_, .viewerBadge_link__1S137, .viewerBadge_text__1JaDK{ display: none; } #MainMenu{ visibility: hidden; } footer { visibility: hidden; } header { visibility: hidden; }
-"""
-
-st.markdown(hide_github_icon, unsafe_allow_html=True)
 st.set_page_config(page_title="ConcreteXAI",
                    page_icon="📈",
                    layout="wide",
                    initial_sidebar_state="auto")
-
-
-# Add custom CSS to hide the GitHub icon
-# hide_github_icon = """
-# #MainMenu {
-#   visibility: hidden;
-# }
-# """
-# st.markdown(hide_github_icon, unsafe_allow_html=True)
-
-
-# st.markdown(
-#     """
-#     <style>
-#     .css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob,
-#     .styles_viewerBadge__1yB5_, .viewerBadge_link__1S137,
-#     .viewerBadge_text__1JaDK {
-#         display: none;
-#     }
-#     </style>
-#     """,
-#     unsafe_allow_html=True
-# )
 
 #######################################################################################
 # Sidebar interface and its elements
