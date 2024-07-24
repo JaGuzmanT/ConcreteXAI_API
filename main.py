@@ -34,7 +34,7 @@ def st_sidebar_images(image_1, image_2, image_3):
 st_sidebar_images(image_1, image_2, image_3)
 #######################################################################################
 # App interface
-st.title(":blue[Concrete Compressive Strength Predictor]")
+st.title(":blue[Concrete Compressive Strength Predictor]", anchor=False)
 st.write("---")
 #######################################################################################
 # Defining the interface with variables
