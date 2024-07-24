@@ -19,7 +19,7 @@ st.sidebar.image(image="Images/UMSNH.jpg", caption="UMSNH", width=100)
 st.sidebar.image(image="Images/civil.jpg", caption="Facultad de Ingeniería Civil", width=100)  
 #######################################################################################
 # App interface
-st.title(":blue[Resources]")
+st.title(":blue[Resources]", anchor=False)
 st.divider()
 #######################################################################################
 # Information about the application
