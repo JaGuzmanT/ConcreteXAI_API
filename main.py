@@ -34,14 +34,10 @@ header {visibility:hidden;}
 </style>
 """
 st.markdown(hide_github_icon, unsafe_allow_html=True)
-
-st.title("Concrete Dataset Analizer")
-st.write("This application is an interactive app for analyzing a custom dataset")
-st.write(
-    """---""")
 #######################################################################################
 # Sidebar interface and its elements
 st.sidebar.title(":green[ConcreteXAI API]")
+st.write("This application is an interactive webapp for predicting the concrete performance using Non-destructive tests")
 # st.logo("images/logo_1.png")
 
 # Defining variables for the images of the interface
