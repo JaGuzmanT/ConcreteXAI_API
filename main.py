@@ -38,7 +38,7 @@ st.title(":blue[Concrete Compressive Strength Predictor]", anchor=False)
 st.write("---")
 #######################################################################################
 # Defining the interface with variables
-st.subheader("Features:")
+st.subheader("Features:", anchor=False)
 F_design = st.number_input(label="Design F'c (MPa):", value=None, placeholder="Type a number", min_value=0.0, max_value=100.00)
 Edad_curado = st.number_input(label="Curing Age (Days]):", value=None, placeholder="Type a number", min_value=0, max_value=100, step=1)
 Er = st.number_input(label="Electrical Resistivity (Ω-cm):", value=None, placeholder="Type a number", min_value=0.00, max_value=20.00, step=1.00)
@@ -97,4 +97,4 @@ if Calculate_button:
 # Registered trend section
 regist = "<h4 style = 'text-align:center'> © ConcreteXAI </h4>"
 avs.add_vertical_space(8)
-st.markdown(regist, unsafe_allow_html=True)
+st.markdown(regist, unsafe_allow_html=True, anchor=False)
