@@ -17,7 +17,7 @@ st.set_page_config(page_title="ConcreteXAI",
 #######################################################################################
 # Sidebar interface and its elements
 title = "<h1 style = 'text-align:center'> :green[ConcreteXAI] </h1>"
-st.sidebar.write(title, unsafe_allow_html=True)
+st.sidebar.markdown(title, unsafe_allow_html=True)
 # st.logo("images/logo_1.png")
 
 # Defining variables for the images of the interface
