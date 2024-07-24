@@ -35,7 +35,6 @@ st.title("Concrete Dataset Analizer")
 st.write("This application is an interactive app for analyzing a custom dataset")
 st.write(
     """---""")
-
 #######################################################################################
 # Sidebar interface and its elements
 st.sidebar.title(":green[ConcreteXAI API]")
