@@ -27,6 +27,7 @@ hide_github_icon = """
 <style>
 #GithubIcon {visibility: hidden;}
 footer {visibility: hidden;}
+header {visibility:hidden;}
 </style>
 """
 st.markdown(hide_github_icon, unsafe_allow_html=True)
