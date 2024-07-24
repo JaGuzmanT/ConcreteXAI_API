@@ -4,22 +4,23 @@ import json
 from streamlit_lottie import st_lottie
 from streamlit_extras import add_vertical_space as avs 
 
-# Setting the appearance of the page
+# # setting the default configuration for the page
 st.set_page_config(page_title="ConcreteXAI",
                    page_icon="📈",
                    layout="wide",
                    initial_sidebar_state="auto")
 
+# Hidding the hamburger button
 hide_streamlit_style = """
 <style>
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 </style>
-
 """
+
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
-# Add custom CSS to hide the GitHub icon
+# Hidding the Github button
 hide_github_icon = """
 <style>
 #GithubIcon {visibility: hidden;}
