@@ -4,6 +4,7 @@ import json
 from streamlit_lottie import st_lottie
 from streamlit_extras import add_vertical_space as avs 
 
+#######################################################################################
 # # setting the default configuration for the page
 st.set_page_config(page_title="ConcreteXAI",
                    page_icon="📈",
