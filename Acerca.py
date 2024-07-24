@@ -50,6 +50,7 @@ with st.expander(label="About ConcreteXAI API"):
     # Defining variables for the texts
     Objetivo = "<h6 style = 'text-align: justify'> The objective of the ConcreteXAI API is to provide an accurate application that allows for the prediction of concrete compressive strength using artificial intelligence techniques. This API is designed for civil engineers, researchers, and professionals in the construction field who seek to optimize concrete mix design and evaluate its performance without the need for destructive testing. </h6>"
     Descripcion = "<h6 style = 'text-align:justify'> ConcreteXAI uses a deep neural network model trained with historical concrete test data. The API allows users to input key concrete design parameters and receive an accurate prediction of compressive strength in MPa. The input parameters include the following attributes: </h6>"
+    Note = "<h6 style = 'text-align:justify> __If you want to learn more about the historical data used as the database and the model generation, please refer to the following publications:__</h6>"
     st.write("_Aim_", Objetivo, unsafe_allow_html=True)
     st.write("_Description_", Descripcion, unsafe_allow_html=True)
     st.write("""
@@ -65,7 +66,7 @@ with st.expander(label="About ConcreteXAI API"):
             2. Data Scaling: The input data is scaled to ensure compatibility with the prediction model.
             3. Prediction: The neural network model processes the scaled data and generates a prediction of the concrete's compressive strength.
             4. Result: The prediction is presented to the user in a clear and understandable manner.""")
-    st.write("__If you want to learn more about the historical data used as the database and the model generation, please refer to the following publications:__")
+    st.write(Note, unsafe_allow_html=True)
     st.markdown("[ConcreteXAI: A multivariate dataset for concrete strength prediction via deep-learning-based methodsConcreteXAI: A multivariate dataset for concrete strength prediction via deep-learning-based methods](https://doi.org/10.1016/j.dib.2024.110218)")
     st.markdown("[Extreme fine-tuning and explainable AI model for non-destructive prediction of concrete compressive strength, the case of ConcreteXAI dataset](https://doi.org/10.1016/j.advengsoft.2024.103630)")
 #######################################################################################
