@@ -22,12 +22,6 @@ footer {visibility: hidden;}
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-
-st.title("Concrete Dataset Analizer")
-st.write("This application is an interactive app for analyzing a custom dataset")
-st.write(
-    """---""")
-
 # Add custom CSS to hide the GitHub icon
 hide_github_icon = """
 #GithubIcon {
@@ -35,6 +29,13 @@ hide_github_icon = """
 }
 """
 st.markdown(hide_github_icon, unsafe_allow_html=True)
+
+st.title("Concrete Dataset Analizer")
+st.write("This application is an interactive app for analyzing a custom dataset")
+st.write(
+    """---""")
+
+
 
 
 #######################################################################################
