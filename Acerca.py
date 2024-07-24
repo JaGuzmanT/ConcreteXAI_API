@@ -53,7 +53,7 @@ with st.expander(label="About ConcreteXAI API"):
 def load_lottiefile(filename: str):
     with open(file=filename, mode='r') as f:
         return json.load(f)
-st.subheader("Research Group", divider="rainbow")
+st.subheader("Research Group", divider="rainbow", anchor=False)
 with st.expander(label="Research Group Info"):
     st.write("Researchers")
     # View of the animation:
@@ -84,7 +84,7 @@ with st.expander(label="Research Group Info"):
 """)
 #######################################################################################
 # Contact section
-st.subheader("Contact", divider="rainbow")
+st.subheader("Contact", divider="rainbow", anchor=False)
 with st.expander(label= "Contact information"):
     st.markdown("✉️ _jose.alberto.guzman@umich.mx_")
 
