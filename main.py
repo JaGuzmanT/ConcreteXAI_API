@@ -55,7 +55,7 @@ st_sidebar_images(image_1, image_2, image_3)
 #######################################################################################
 # App interface
 st.title(":blue[Concrete Compressive Strength Predictor]", anchor=False)
-st.write("This application is an interactive webapp for predicting the concrete performance using Non-destructive tests")
+st.write("_This application is an interactive webapp for predicting the concrete performance using Non-destructive tests_")
 st.write("---")
 #######################################################################################
 # Defining the interface with variables
