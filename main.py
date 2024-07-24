@@ -9,6 +9,7 @@ from tensorflow.keras.models import load_model  # type: ignore
 from streamlit_extras import add_vertical_space as avs
 from streamlit_lottie import st_lottie 
 
+#######################################################################################
 # setting the default configuration for the page
 st.set_page_config(page_title="ConcreteXAI",
                    page_icon="📈",
@@ -38,10 +39,6 @@ st.title("Concrete Dataset Analizer")
 st.write("This application is an interactive app for analyzing a custom dataset")
 st.write(
     """---""")
-
-
-
-
 #######################################################################################
 # Sidebar interface and its elements
 st.sidebar.title(":green[ConcreteXAI API]")
