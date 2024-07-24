@@ -9,6 +9,17 @@ from tensorflow.keras.models import load_model  # type: ignore
 from streamlit_extras import add_vertical_space as avs
 from streamlit_lottie import st_lottie 
 
+st.markdown(""" 
+<style>             
+.css-14xtw13.e8zbici0
+{
+    visibility: hidden;
+}
+.css-cio0dv.egzxvld1
+{visibility: hidden;}
+</style>
+ """, unsafe_allow_html=True)
+
 st.set_page_config(page_title="ConcreteXAI",
                    page_icon="📈",
                    layout="wide",
