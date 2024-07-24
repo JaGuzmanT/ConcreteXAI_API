@@ -37,7 +37,6 @@ st.markdown(hide_github_icon, unsafe_allow_html=True)
 #######################################################################################
 # Sidebar interface and its elements
 st.sidebar.title(":green[ConcreteXAI API]")
-st.write("This application is an interactive webapp for predicting the concrete performance using Non-destructive tests")
 # st.logo("images/logo_1.png")
 
 # Defining variables for the images of the interface
@@ -56,6 +55,7 @@ st_sidebar_images(image_1, image_2, image_3)
 #######################################################################################
 # App interface
 st.title(":blue[Concrete Compressive Strength Predictor]", anchor=False)
+st.write("This application is an interactive webapp for predicting the concrete performance using Non-destructive tests")
 st.write("---")
 #######################################################################################
 # Defining the interface with variables
