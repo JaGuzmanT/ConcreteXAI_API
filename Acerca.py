@@ -81,7 +81,7 @@ with st.expander(label="Research Group Info"):
     st.write("Researchers")
     # View of the animation:
     lottie_animation = load_lottiefile("Gifs/Ironman_animation.json")
-    st_lottie(lottie_animation, height=180) # For more information about gifs you can check https://lottiefiles.com/
+    st_lottie(lottie_animation, height=150) # For more information about gifs you can check https://lottiefiles.com/
 
     col1, col2, col3, col4, col5 = st.columns(5)
     
