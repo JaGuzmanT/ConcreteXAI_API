@@ -4,10 +4,11 @@ import time
 import numpy as np
 import json
 import pandas as pd
+import os
 from sklearn.preprocessing import StandardScaler
 from tensorflow.keras.models import load_model  # type: ignore
 from streamlit_extras import add_vertical_space as avs
-from streamlit_lottie import st_lottie 
+from streamlit_lottie import st_lottie
 
 #######################################################################################
 # setting the default configuration for the page
@@ -35,6 +36,9 @@ header {visibility:hidden;}
 </style>
 """
 st.markdown(hide_github_icon, unsafe_allow_html=True)
+#######################################################################################
+# Cleaning the interface of the terminal
+os.system("cls")
 #######################################################################################
 # Sidebar interface and its elements
 st.sidebar.title(":green[ConcreteXAI API]")
