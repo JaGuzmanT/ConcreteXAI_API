@@ -41,7 +41,7 @@ st.markdown(hide_github_icon, unsafe_allow_html=True)
 os.system("cls")
 #######################################################################################
 # Sidebar interface and its elements
-st.sidebar.title(":green[ConcreteXAI API]")
+st.sidebar.title(":fire::green[ConcreteXAI API]")
 # st.logo("images/logo_1.png")
 
 # Defining variables for the images of the interface
