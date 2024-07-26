@@ -103,7 +103,7 @@ with st.expander(label="Research Group Info"):
     st.write("""
             - Heriberto Arias Rojas
             - Ricardo Román Gutierrez
-            - Maybelline Carolina García Chiquito
+            - Maybelin Carolina García Chiquito
 """)
 #######################################################################################
 # Contact section
