@@ -86,19 +86,19 @@ with st.expander(label="Research Group Info"):
     col1, col2, col3, col4, col5 = st.columns(5)
     
     with col1:
-        st.image(image="Images/JAGT1.jpg", caption="Dr. José Alberto Guzmán Torres")
+        st.image(image="Images/JAGT1.jpg", caption="PhD. José Alberto Guzmán Torres")
 
     with col2:
-        st.image(image="Images/FJDM1.jpg", caption="Dr. Francisco Javier Domínguez Mota")
+        st.image(image="Images/FJDM1.jpg", caption="PhD. Francisco Javier Domínguez Mota")
     
     with col3:
-        st.image(image="Images/GTG.jpg", caption= "Dr. Gerardo Tinoco Guerrero", use_column_width=True)
+        st.image(image="Images/GTG.jpg", caption= "PhD. Gerardo Tinoco Guerrero", use_column_width=True)
     
     with col4:
-        st.image(image="Images/EMAG.jpg", caption= "Dra. Elia Mercedes Alonso Guzmán")
+        st.image(image="Images/EMAG.jpg", caption= "PhD. Elia Mercedes Alonso Guzmán")
 
     with col5:
-        st.image(image="Images/JGTR1.jpg", caption= "Dr. José Gerardo Tinoco Ruíz")
+        st.image(image="Images/JGTR1.jpg", caption= "PhD. José Gerardo Tinoco Ruíz")
     st.write("Students")
     st.write("""
             - Heriberto Arias Rojas
