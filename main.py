@@ -54,13 +54,23 @@ image_2 = "Images/UMSNH.jpg"
 image_3 = "Images/civil.jpg"
 
 # Defining a function that loads the images in the sidebar with a caching decorator
-@st.cache_data()
+
 def st_sidebar_images(image_1, image_2, image_3):
-	st.sidebar.image(image=image_1, caption="IngenierIA Soluciones", width=100)
-	st.sidebar.image(image=image_2, caption="UMSNH", width=100)
-	st.sidebar.image(image=image_3, caption="Facultad de Ingeniería Civil", width=100)           
+	with st.sidebar.container:
+		st.image(image=image_1, caption="IngenierIA Soluciones", width=100)
+		st.image(image=image_2, caption="UMSNH", width=100)
+		st.image(image=image_3, caption="Facultad de Ingeniería Civil", width=100)
 
 st_sidebar_images(image_1, image_2, image_3)
+
+
+# @st.cache_data()
+# def st_sidebar_images(image_1, image_2, image_3):
+# 	st.sidebar.image(image=image_1, caption="IngenierIA Soluciones", width=100)
+# 	st.sidebar.image(image=image_2, caption="UMSNH", width=100)
+# 	st.sidebar.image(image=image_3, caption="Facultad de Ingeniería Civil", width=100)           
+
+# st_sidebar_images(image_1, image_2, image_3)
 #######################################################################################
 # App interface
 st.title(":blue[Concrete Compressive Strength Predictor]", anchor=False)
