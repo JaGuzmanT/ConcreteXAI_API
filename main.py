@@ -129,8 +129,8 @@ with st.container(height=200, border=False):
 	with col2:
 		col1, col2, col3= st.columns(3, vertical_alignment="center")
 		with col1:
-			st.image(image="Images/conahcyt.png", width=400)
+			st.image(image="Images/conahcyt.png", width=200)
 		with col2:		
-				st.image(image="Images/logo_siiia_w.png", width=400)
+				st.image(image="Images/logo_siiia_w.png", width=200)
 		with col3:
 				st.image(image="Images/UMSNH.png", width=90)
