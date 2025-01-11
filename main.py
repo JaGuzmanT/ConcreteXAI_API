@@ -60,8 +60,8 @@ st.markdown(hide_github_icon, unsafe_allow_html=True)
 # st_sidebar_images(image_1)
 #######################################################################################
 # App interface
-col1, col2, col3 = st.columns(3, vertical_alignment=True)
-with col2:
+col1_ti, col2_ti, col3_ti = st.columns(3, vertical_alignment="center", gap="small")
+with col2_ti:
 	st.title(":green[ConcreteXAI API] 📈", anchor=False)
 	st.write(":fire: _This application is an interactive webapp for predicting the concrete performance using Non-destructive tests_ :fire:")
 st.divider()
