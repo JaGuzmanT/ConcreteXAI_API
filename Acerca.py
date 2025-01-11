@@ -33,12 +33,18 @@ header {visibility:hidden;}
 st.markdown(hide_github_icon, unsafe_allow_html=True)
 #######################################################################################
 # Sidebar interface and its elements
-st.sidebar.title(":green[ConcreteXAI API]")
-# st.logo("images/logo_1.png")
 
-st.sidebar.image(image="Images/logo_1.png", caption="IngenierIA Soluciones", width=100)
-st.sidebar.image(image="Images/UMSNH.jpg", caption="UMSNH", width=100)
-st.sidebar.image(image="Images/civil.jpg", caption="Facultad de Ingeniería Civil", width=100)  
+# Defining variables for the images of the interface
+image_1 = "Images/logo.webp"
+
+# Defining a function that loads the images in the sidebar with a caching decorator
+
+def st_sidebar_images(image_1):
+	with st.sidebar.container():
+		st.image(image=image_1)
+		st.logo(image=image_1)
+
+st_sidebar_images(image_1)
 #######################################################################################
 # App interface
 st.title(":blue[Resources]", anchor=False)
