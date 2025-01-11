@@ -122,5 +122,7 @@ with st.form("User inputs"):
 			st.error('Failed to compute, please fill out all the fields to calculate compressive strength', icon="🚨")
 #######################################################################################
 # Registered trend section
+st.html("<h5 style='text-align:center'> © ConcreteXAI. All rights reserved. </h5>")
+
 avs.add_vertical_space(8)
 st.write("© ConcreteXAI")
