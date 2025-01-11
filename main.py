@@ -58,7 +58,7 @@ def st_sidebar_images(image_1):
 st_sidebar_images(image_1)
 #######################################################################################
 # App interface
-st.title(":green[ConcreteXAI API]")
+st.title(":green[ConcreteXAI API]", anchor=False)
 st.write(":fire: _This application is an interactive webapp for predicting the concrete performance using Non-destructive tests_ :fire:")
 st.write("---")
 #######################################################################################
