@@ -11,7 +11,6 @@ from tensorflow.keras.models import load_model  # type: ignore
 from streamlit_extras import add_vertical_space as avs # type: ignore
 from streamlit_lottie import st_lottie # type: ignore
 
-
 #######################################################################################
 # Cleaning the interface of the terminal
 os.system("cls")
@@ -46,31 +45,17 @@ st.markdown(hide_github_icon, unsafe_allow_html=True)
 #######################################################################################
 # Sidebar interface and its elements
 st.sidebar.title(":green[ConcreteXAI API]")
-# st.logo("images/logo_1.png")
 
 # Defining variables for the images of the interface
-image_1 = "Images/logo_1.jpg"
-image_2 = "Images/UMSNH.jpg"
-image_3 = "Images/civil.jpg"
+image_1 = "Images/logo.webp"
 
 # Defining a function that loads the images in the sidebar with a caching decorator
 
-def st_sidebar_images(image_1, image_2, image_3):
+def st_sidebar_images(image_1):
 	with st.sidebar.container():
 		st.image(image=image_1, caption="IngenierIA Soluciones")
-		st.image(image=image_2, caption="UMSNH")
-		st.image(image=image_3, caption="Facultad de Ingeniería Civil", width=100)
 
-st_sidebar_images(image_1, image_2, image_3)
-
-
-# @st.cache_data()
-# def st_sidebar_images(image_1, image_2, image_3):
-# 	st.sidebar.image(image=image_1, caption="IngenierIA Soluciones", width=100)
-# 	st.sidebar.image(image=image_2, caption="UMSNH", width=100)
-# 	st.sidebar.image(image=image_3, caption="Facultad de Ingeniería Civil", width=100)           
-
-# st_sidebar_images(image_1, image_2, image_3)
+st_sidebar_images(image_1)
 #######################################################################################
 # App interface
 st.title(":blue[Concrete Compressive Strength Predictor]", anchor=False)
