@@ -53,7 +53,7 @@ image_1 = "Images/logo.webp"
 
 def st_sidebar_images(image_1):
 	with st.sidebar.container():
-		st.image(image=image_1, caption="IngenierIA Soluciones")
+		st.image(image=image_1, caption=":green[ConcreteXAI API]"")
 
 st_sidebar_images(image_1)
 #######################################################################################
