@@ -123,6 +123,3 @@ with st.form("User inputs"):
 #######################################################################################
 # Registered trend section
 st.html("<h5 style='text-align:center'> © ConcreteXAI. All rights reserved. </h5>")
-
-avs.add_vertical_space(8)
-st.write("© ConcreteXAI")
