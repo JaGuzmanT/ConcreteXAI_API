@@ -56,7 +56,7 @@ image_3 = "Images/civil.jpg"
 # Defining a function that loads the images in the sidebar with a caching decorator
 
 def st_sidebar_images(image_1, image_2, image_3):
-	with st.sidebar.container:
+	with st.sidebar.container():
 		st.image(image=image_1, caption="IngenierIA Soluciones", width=100)
 		st.image(image=image_2, caption="UMSNH", width=100)
 		st.image(image=image_3, caption="Facultad de Ingeniería Civil", width=100)
