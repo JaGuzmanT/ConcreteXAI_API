@@ -53,12 +53,12 @@ image_1 = "Images/logo.webp"
 
 def st_sidebar_images(image_1):
 	with st.sidebar.container():
-		st.image(image=image_1, caption=":green[ConcreteXAI API]")
+		st.image(image=image_1)
 
 st_sidebar_images(image_1)
 #######################################################################################
 # App interface
-st.title(":blue[Concrete Compressive Strength Predictor]", anchor=False)
+st.title(":green[ConcreteXAI API]", anchor=False)
 st.write(":fire: _This application is an interactive webapp for predicting the concrete performance using Non-destructive tests_ :fire:")
 st.write("---")
 #######################################################################################
