@@ -123,3 +123,14 @@ with st.form("User inputs"):
 #######################################################################################
 # Registered trend section
 st.html("<h5 style='text-align:center'> © ConcreteXAI. All rights reserved. </h5>")
+
+with st.container(height=200, border=False):
+	col1, col2, col3 = st.columns(3,vertical_alignment="center", gap="small")
+	with col2:
+		col1, col2, col3= st.columns(3, vertical_alignment="center")
+		with col1:
+			st.image(image="Images/conahcyt.png", width=400)
+		with col2:		
+				st.image(image="Images/logo_siiia_w.png", width=400)
+		with col3:
+				st.image(image="Images/UMSNH.png", width=90)
