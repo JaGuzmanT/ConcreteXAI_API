@@ -7,6 +7,7 @@ import pandas as pd
 import os
 import tensorflow as tf
 from sklearn.preprocessing import StandardScaler
+from Utilities import background
 from tensorflow.keras.models import load_model  # type: ignore
 from streamlit_extras import add_vertical_space as avs # type: ignore
 from streamlit_lottie import st_lottie # type: ignore
@@ -22,6 +23,7 @@ st.set_page_config(page_title="ConcreteXAI",
 				page_icon="📈",
 				layout="wide",
 				initial_sidebar_state="auto")
+background("Images/Sidebar_img.webp")
 
 # Hidding the hamburger button
 hide_streamlit_style = """
@@ -69,7 +71,7 @@ st.divider()
 with st.form("User inputs"):
 	st.subheader("Features:", anchor=False)
 	F_design = st.number_input(label="Design F'c (MPa):", value=None, placeholder="Type a number", min_value=0.0, max_value=100.00)
-	Edad_curado = st.number_input(label="Curing Age (Days]):", value=None, placeholder="Type a number", min_value=0, max_value=100, step=1)
+	Edad_curado = st.number_input(label="Curing Age (Days):", value=None, placeholder="Type a number", min_value=0, max_value=100, step=1)
 	Er = st.number_input(label="Electrical Resistivity (Ω-cm):", value=None, placeholder="Type a number", min_value=0.00, max_value=20.00, step=1.00)
 	Ultras = st.number_input(label="Ultrasonic Pulse Velicty (m/s):", value=None, placeholder="Type a number", min_value=0.00, max_value=6000.00, step=100.00)
 
