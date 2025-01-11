@@ -53,7 +53,7 @@ image_1 = "Images/logo.webp"
 def st_sidebar_images(image_1):
 	with st.sidebar.container():
 		st.image(image=image_1)
-		st.logo(image=image_1, size= "large")
+		st.logo(image=image_1)
 
 st_sidebar_images(image_1)
 #######################################################################################
