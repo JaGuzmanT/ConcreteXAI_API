@@ -23,7 +23,7 @@ st.set_page_config(page_title="ConcreteXAI",
 				page_icon="Images/logo.webp",
 				layout="wide",
 				initial_sidebar_state="auto")
-background("Images/Sidebar_img.png")
+background("Images/Sidebar_img.webp")
 
 # Hidding the hamburger button
 hide_streamlit_style = """
