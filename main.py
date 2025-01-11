@@ -48,16 +48,16 @@ st.markdown(hide_github_icon, unsafe_allow_html=True)
 # Sidebar interface and its elements
 
 # Defining variables for the images of the interface
-image_1 = "Images/logo.webp"
+# image_1 = "Images/logo.webp"
 
-# Defining a function that loads the images in the sidebar with a caching decorator
+# # Defining a function that loads the images in the sidebar with a caching decorator
 
-def st_sidebar_images(image_1):
-	with st.sidebar.container():
-		st.image(image=image_1)
-		st.logo(image=image_1)
+# def st_sidebar_images(image_1):
+# 	with st.sidebar.container():
+# 		st.image(image=image_1)
+# 		st.logo(image=image_1)
 
-st_sidebar_images(image_1)
+# st_sidebar_images(image_1)
 #######################################################################################
 # App interface
 st.title(":green[ConcreteXAI API] 📈", anchor=False)
