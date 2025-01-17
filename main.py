@@ -66,6 +66,7 @@ with col2_ti:
 	st.image("Images/logo.webp", width=385) 
 st.divider()
 with st.container(border=True):
+	st.subheader("Description", divider="green")
 	st.write(":fire: _This application is an interactive webapp for predicting the concrete performance using Non-destructive tests_ :fire:")
 
 #######################################################################################
