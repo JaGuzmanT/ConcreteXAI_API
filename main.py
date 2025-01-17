@@ -63,9 +63,10 @@ st.markdown(hide_github_icon, unsafe_allow_html=True)
 col1_ti, col2_ti, col3_ti = st.columns(3, vertical_alignment="center", gap="small")
 with col2_ti:
 	st.title(":green[ConcreteXAI API] 📈", anchor=False)
-	st.image("Images/logo.webp", width=310) 
-st.write(":fire: _This application is an interactive webapp for predicting the concrete performance using Non-destructive tests_ :fire:")
+	st.image("Images/logo.webp", width=340) 
 st.divider()
+st.write(":fire: _This application is an interactive webapp for predicting the concrete performance using Non-destructive tests_ :fire:")
+
 #######################################################################################
 # Defining the interface with variables
 	# Wrapping the user inputs in and allow to user to change all the inputs and submit the entire form at once, 
