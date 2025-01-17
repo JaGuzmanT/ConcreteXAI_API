@@ -65,7 +65,8 @@ with col2_ti:
 	st.title(":green[ConcreteXAI API] 📈", anchor=False)
 	st.image("Images/logo.webp", width=385) 
 st.divider()
-st.write(":fire: _This application is an interactive webapp for predicting the concrete performance using Non-destructive tests_ :fire:")
+with st.container(border=True):
+	st.write(":fire: _This application is an interactive webapp for predicting the concrete performance using Non-destructive tests_ :fire:")
 
 #######################################################################################
 # Defining the interface with variables
