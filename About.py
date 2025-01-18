@@ -106,7 +106,7 @@ with st.expander(label=":green[Research Group Info]"):
 #######################################################################################
 # Contact section
 st.subheader("Contact", divider="rainbow", anchor=False)
-with st.expander(label= "Contact information"):
+with st.expander(label= ":green[Contact information]"):
     st.markdown("✉️ _jose.alberto.guzman@umich.mx_")
 
 #######################################################################################
