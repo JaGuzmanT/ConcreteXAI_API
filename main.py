@@ -46,18 +46,8 @@ header {visibility:hidden;}
 st.markdown(hide_github_icon, unsafe_allow_html=True)
 #######################################################################################
 # Sidebar interface and its elements
-
-# Defining variables for the images of the interface
-# image_1 = "Images/logo.webp"
-
-# # Defining a function that loads the images in the sidebar with a caching decorator
-
-# def st_sidebar_images(image_1):
-# 	with st.sidebar.container():
-# 		st.image(image=image_1)
-# 		st.logo(image=image_1)
-
-# st_sidebar_images(image_1)
+with st.sidebar.container():
+	st.logo(image="Images/logo.webp")
 #######################################################################################
 # App interface
 col1_ti, col2_ti, col3_ti = st.columns(3, vertical_alignment="center", gap="small")
