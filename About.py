@@ -44,7 +44,7 @@ st.divider()
 #######################################################################################
 # Information about the application
 st.subheader("Info", divider="rainbow", anchor=False)
-with st.expander(label="About ConcreteXAI API"):
+with st.expander(label=":green[About ConcreteXAI API]"):
     # Defining variables for the texts
     Objetivo = "<h6 style = 'text-align: justify'> The objective of the ConcreteXAI API is to provide an accurate application that allows for the prediction of concrete compressive strength using artificial intelligence techniques. This API is designed for civil engineers, researchers, and professionals in the construction field who seek to optimize concrete mix design and evaluate its performance without the need for destructive testing. </h6>"
     Descripcion = "<h6 style = 'text-align:justify'> ConcreteXAI uses a deep neural network model trained with historical concrete test data. The API allows users to input key concrete design parameters and receive an accurate prediction of compressive strength in MPa. The input parameters include the following attributes: </h6>"
