@@ -50,16 +50,16 @@ with st.expander(label=":green[About ConcreteXAI API]"):
     Descripcion = "<h6 style = 'text-align:justify'> ConcreteXAI uses a deep neural network model trained with historical concrete test data. The API allows users to input key concrete design parameters and receive an accurate prediction of compressive strength in MPa. The input parameters include the following attributes: </h6>"
     Note = "<h6 style = 'text-align:justify'> If you want to learn more about the historical data used as the database and the model generation, please refer to the following publications:</h6>"
     st.write(":orange[_Aim_]", Objetivo, unsafe_allow_html=True)
-    st.write("_Description_", Descripcion, unsafe_allow_html=True)
+    st.write(":orange[_Description_]", Descripcion, unsafe_allow_html=True)
     st.write("""
             - Design F'c (MPa): The design compressive strength of the concrete.
             - Curing Age (Days): The curing time of the concrete.
             - Electrical Resistivity (Ω-cm): A measure of the concrete's electrical resistivity, which can be related to its quality and durability.
             - Ultrasonic Pulse Velocity (m/s): The velocity of the ultrasonic pulse through the concrete, used to assess its integrity and physical properties."""
-             )
+            )
     st.write("""
-             _Workflow_
-             
+            :orange[_Workflow_]
+            
             1. Data Entry: The user enters the concrete design parameters through the user interface.
             2. Data Scaling: The input data is scaled to ensure compatibility with the prediction model.
             3. Prediction: The neural network model processes the scaled data and generates a prediction of the concrete's compressive strength.
