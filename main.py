@@ -88,7 +88,8 @@ with st.form("User inputs"):
 	if Calculate_button:
 		message = st.empty()  # Inserting a single-element container
 		message.text("Calculating the compressive strength in MPa...")
-		time.sleep(3)
+		with st.spinner("Calculating the compressive strength in MPa..."):
+			time.sleep(3)
 		message.text("")      # Cleaning the message
 
 	# Configuring the inputs into a vector format
