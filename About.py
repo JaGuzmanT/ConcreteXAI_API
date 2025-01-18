@@ -75,8 +75,8 @@ def load_lottiefile(filename: str):
     with open(file=filename, mode='r') as f:
         return json.load(f)
 st.subheader("Research Group", divider="rainbow", anchor=False)
-with st.expander(label="Research Group Info"):
-    st.write("Researchers")
+with st.expander(label=":green[Research Group Info]"):
+    st.write(":orange[_Researchers_]")
     # View of the animation:
     lottie_animation = load_lottiefile("Gifs/Ironman_animation.json")
     st_lottie(lottie_animation, height=140) # For more information about gifs you can check https://lottiefiles.com/
