@@ -2,14 +2,16 @@
 import streamlit as st
 import json
 from streamlit_lottie import st_lottie
-from streamlit_extras import add_vertical_space as avs 
+from Utilities import background
+from streamlit_extras import add_vertical_space as avs
 
 #######################################################################################
 # # setting the default configuration for the page
 st.set_page_config(page_title="ConcreteXAI",
-                   page_icon="📈",
-                   layout="wide",
-                   initial_sidebar_state="auto")
+				page_icon="Images/logo.webp",
+				layout="wide",
+				initial_sidebar_state="auto")
+background("Images/Sidebar_img.webp")
 
 # Hidding the hamburger button
 hide_streamlit_style = """
