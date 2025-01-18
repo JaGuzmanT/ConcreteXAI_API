@@ -87,10 +87,10 @@ with st.form("User inputs"):
 	# Setting the button
 	if Calculate_button:
 		message = st.empty()  # Inserting a single-element container
-		message.text("Calculating the compressive strength in MPa...")
+		# message.text("Calculating the compressive strength in MPa...")
 		with st.spinner("Calculating the compressive strength in MPa..."):
 			time.sleep(3)
-		message.text("")      # Cleaning the message
+		# message.text("")      # Cleaning the message
 
 	# Configuring the inputs into a vector format
 		input_vector = np.array(np.array([[F_design, Edad_curado, Er, Ultras]]))
