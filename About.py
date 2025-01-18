@@ -111,11 +111,15 @@ with st.expander(label= "Contact information"):
 
 #######################################################################################
 # Registered trend section
-# Registered trend section
-avs.add_vertical_space(8)
-st.write("© ConcreteXAI")
+st.html("<h5 style='text-align:center'> © ConcreteXAI. All rights reserved. </h5>")
 
-    
-
-    
-
+with st.container(height=200, border=False):
+	col1, col2, col3 = st.columns(3,vertical_alignment="center", gap="small")
+	with col2:
+		col1, col2, col3= st.columns(3, vertical_alignment="center")
+		with col1:
+			st.image(image="Images/conahcyt.png", width=170)
+		with col2:		
+				st.image(image="Images/logo_siiia_w.png", width=170)
+		with col3:
+				st.image(image="Images/UMSNH.png", width=90)
