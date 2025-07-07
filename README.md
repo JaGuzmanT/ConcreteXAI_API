@@ -130,10 +130,11 @@ streamlit-lottie
 json
 ```
 ---
-### Clone the repository
+🚀 Quick installation 
 ```
- 
-git clone https://github.com/your-username/ConcreteXAI_API.git
+1. Clone the repository
+
+git clone https://github.com/JaGuzmanT/ConcreteXAI_API.git
 cd ConcreteXAI_API
 
 # Install dependencies
@@ -201,17 +202,6 @@ streamlit run
 </td>
 </tr>
 </table>
-
-### :mortar_board: Graduate Students
-
-**Ángel Emeterio Calvillo Vázquez** :mexico:
-- :dart: Graduate Student
-- :classical_building: Universidad Michoacana de San Nicolás de Hidalgo
-- :microscope: Computational Biology & Numerical Simulation
-- :email: 1025501x@umich.mx
-- :globe_with_meridians: [ORCID](https://orcid.org/0009-0005-5497-5166)
-- :briefcase: Research Focus: Skin diffusion modeling and machine learning applications
-
 ---
 
 ## :books: Scientific References
@@ -251,3 +241,38 @@ SOFTWARE.
 ```
 
 ---
+## :email: Contact & Support
+
+### :busts_in_silhouette: Research Group Contact
+
+**Primary Contact:**
+- **Dr. José Alberto Guzmán Torres**
+  - :email: jose.alberto.guzman@umich.mx
+  - :office: SIIIA MATH: Soluciones en ingeniería
+  - :classical_building: Universidad Michoacana de San Nicolás de Hidalgo
+
+### :question: Technical Support
+
+For technical questions and issues:
+1. **Email Support**: Contact the research team directly for complex technical inquiries
+2. **Academic Collaboration**: Reach out for research partnerships and joint projects
+
+### :mortar_board: Student Inquiries
+
+Interested in graduate research opportunities?
+- **Contact**: Dr. José Alberto Guzmán Torres (jose.alberto.guzman@umich.mx)
+- **Topics**: Machine Learning, Deep Learning, Computer vision applications
+- **Institution**: Universidad Michoacana de San Nicolás de Hidalgo
+
+### :globe_with_meridians: Institutional Affiliations
+
+- **SIIIA MATH**: [Soluciones en ingeniería](http://www.siiia.com.mx)
+- **UMSNH**: [Universidad Michoacana de San Nicolás de Hidalgo](http://www.umich.mx)
+
+---
+
+<div align="center">
+
+**:star: If this project helps your research, please consider giving it a star! :star:**
+
+</div>
