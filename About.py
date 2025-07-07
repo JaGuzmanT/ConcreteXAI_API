@@ -90,7 +90,7 @@ with st.expander(label=":green[Research Group Info]"):
         st.image(image="Images/FJDM1.jpg", caption="PhD. Francisco Javier Domínguez Mota")
     
     with col3:
-        st.image(image="Images/GTG.jpg", caption= "PhD. Gerardo Tinoco Guerrero", use_column_width=True)
+        st.image(image="Images/GTG.jpg", caption= "PhD. Gerardo Tinoco Guerrero")
     
     with col4:
         st.image(image="Images/EMAG.jpg", caption= "PhD. Elia Mercedes Alonso Guzmán")
