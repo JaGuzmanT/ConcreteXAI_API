@@ -97,12 +97,6 @@ with st.expander(label=":green[Research Group Info]"):
 
     with col5:
         st.image(image="Images/JGTR1.jpg", caption= "PhD. José Gerardo Tinoco Ruíz")
-    st.write("Students")
-    st.write("""
-            - Heriberto Arias Rojas
-            - Ricardo Román Gutierrez
-            - Maybelin Carolina García Chiquito
-""")
 #######################################################################################
 # Contact section
 st.subheader("Contact", divider="rainbow", anchor=False)
