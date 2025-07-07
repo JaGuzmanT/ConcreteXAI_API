@@ -22,7 +22,7 @@ os.system("cls")
 st.set_page_config(page_title="ConcreteXAI",
 				page_icon="Images/logo.webp",
 				layout="wide",
-				initial_sidebar_state="auto")
+				initial_sidebar_state="expanded")
 background("Images/Sidebar.png")
 
 # Hidding the hamburger button
