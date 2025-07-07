@@ -19,7 +19,7 @@
 
 ConcreteXAI API is an innovative web application designed to empower civil engineers, researchers, and practitioners with instant, explainable predictions of concrete compressive strength using non-destructive test data. Built with Streamlit for seamless interactivity and powered by deep learning, this tool bridges the gap between advanced AI and practical engineering needs.
 
-- ## :gear: Key Features
+## :gear: Key Features
   
 - **:rocket: Instant Predictions**: Real-time compressive strength estimation from user inputs
 - **:microscope: Explainable AI**: Transparent model outputs for trustworthy decision-making
@@ -28,8 +28,8 @@ ConcreteXAI API is an innovative web application designed to empower civil engin
 - **:wrench: Modular Design**: Easily extensible for new features and datasets
 - **:bar_chart: Data Scaling**: Automated input normalization for robust predictions
 - **:lock: Privacy First**: No data stored—inputs processed in-memory for user confidentiality
-
-### :construction_worker: Applications
+---
+## :construction_worker: Applications
 
 | Field | Application | Use Case |
 |-------|-------------|----------|
@@ -166,7 +166,7 @@ streamlit run
 | **Explainability** | Limited            | Transparent, interactive  |
 | **Accessibility** | Specialist required | Anyone, anywhere          |
 | **Scalability** | Static                | Easily updatable          |
-
+---
 ## :scientist: Research Team
 
 ### :man_scientist: Principal Researchers
@@ -178,7 +178,7 @@ streamlit run
 **Dr. José Alberto Guzmán Torres** :mexico:
 - :office: [SIIIA MATH: Soluciones en ingeniería](http://www.siiia.com.mx)
 - :classical_building: [Universidad Michoacana de San Nicolás de Hidalgo](http://www.umich.mx)
-- :microscope: Engineering applications and Artificial Intelligence
+- :microscope: Engineering applications & Artificial Intelligence
 - :email: jose.alberto.guzman@umich.mx
 - :globe_with_meridians: [ORCID](https://orcid.org/0000-0002-9309-9390)
 
