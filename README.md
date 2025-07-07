@@ -81,6 +81,8 @@ Core Components
 📦 ConcreteXAI_API/
 ├── main.py                   # Streamlit app entry point
 ├── Utilities.py              # UI helpers (background, etc.)
+├── About.py                  # App information
+├── Concrete_X_API_0.1.py     # Navigation page of the app
 ├── Models/
 │   └── model_weights_best.hdf5   # Trained neural network weights
 ├── Images/
@@ -94,7 +96,8 @@ Core Components
 ├── Model_creation/
 │   └── Codes/
 │       └── 1_Data_analysis/
-│           └── Data.csv          # Reference dataset for scaling
+│       |    └── Data.csv         # Reference dataset for scaling
+|       └── 2_DNN_model/          # Model that was employed to get the weights
 ├── requirements.txt              # Python dependencies
 └── README.md                     # Project documentation
 ```
