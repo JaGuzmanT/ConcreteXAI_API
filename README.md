@@ -141,7 +141,7 @@ git clone https://github.com/JaGuzmanT/ConcreteXAI_API.git
 cd ConcreteXAI_API
 
 # Install dependencies
-pip install -r 
+pip install -r requirements.txt
 
 # Run the Streamlit app
 streamlit run
