@@ -11,6 +11,20 @@ from Utilities import background
 from tensorflow.keras.models import load_model  # type: ignore
 from streamlit_extras import add_vertical_space as avs # type: ignore
 from streamlit_lottie import st_lottie # type: ignore
+import extra_streamlit_components as stx
+import datetime
+import uuid
+import visit_counter
+
+cookie_manager = stx.CookieManager()
+visitor_id = cookie_manager.get("visitor_id")
+if not visitor_id:
+    visitor_id = str(uuid.uuid4())
+    expiration_date = datetime.datetime.now() + datetime.timedelta(days=1) # 24 durations for uniqueness
+    cookie_manager.set("visitor_id", visitor_id, expires_at=expiration_date)
+
+visit_counter.register_visit(visitor_id)
+stats = visit_counter.get_statistics()
 
 #######################################################################################
 # Cleaning the interface of the terminal
@@ -31,6 +45,8 @@ hide_streamlit_style = """
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 header {visibility:hidden;}
+[data-testid="collapsedControl"] {display: none;}
+[data-testid="stSidebarCollapseButton"] {display: none;}
 </style>
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
@@ -117,6 +133,66 @@ with st.form("User inputs"):
 		except Exception as e:
 			print("Algo no está bien") # For terminal purposes
 			st.error('Failed to compute, please fill out all the fields to calculate compressive strength', icon="🚨")
+#######################################################################################
+# Visitor Statistics Section
+st.divider()
+st.subheader("Estadísticas de Acceso ", anchor=False, divider="rainbow")
+
+total_visits = stats["total"]
+st.components.v1.html(
+    f"""
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+    body {{ margin: 0; padding: 0; font-family: 'Orbitron', sans-serif; }}
+    .counter-wrapper {{
+        background: linear-gradient(135deg, rgba(39,174,96,0.9), rgba(46,204,113,0.9));
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        text-align: center;
+        color: white;
+        margin: 10px auto;
+        position: relative;
+    }}
+    .title {{ font-size: 1.1rem; text-transform: uppercase; letter-spacing: 2px; opacity: 0.9; }}
+    .number {{ font-size: 3rem; font-weight: 700; text-shadow: 2px 2px 10px rgba(0,0,0,0.3); }}
+    </style>
+    <div class="counter-wrapper">
+        <div class="title">Visitas Totales</div>
+        <div class="number" id="animatedCounter">0</div>
+    </div>
+    <script>
+        const target = {total_visits};
+        const duration = 2000;
+        const oDom = document.getElementById('animatedCounter');
+        let startTimestamp = null;
+        let startVal = Math.max(0, target - 200);
+        
+        const step = (timestamp) => {{
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            const current = Math.floor(startVal + (target - startVal) * progress);
+            oDom.innerText = current.toLocaleString();
+            if (progress < 1) {{
+                window.requestAnimationFrame(step);
+            }} else {{
+                oDom.innerText = target.toLocaleString();
+            }}
+        }};
+        window.requestAnimationFrame(step);
+    </script>
+    """,
+    height=160
+)
+
+col_s1, col_s2, col_s3, col_s4 = st.columns(4)
+col_s1.metric(label="Visitas de Hoy", value=stats["today"])
+col_s2.metric(label="Visitas en la Semana", value=stats["week"])
+col_s3.metric(label="Visitas en el Mes", value=stats["month"])
+col_s4.metric(label="Promedio Diario", value=stats["average"])
+
+st.markdown("<br>", unsafe_allow_html=True)
+
 #######################################################################################
 # Registered trend section
 st.html("<h5 style='text-align:center'> © ConcreteXAI. All rights reserved. </h5>")

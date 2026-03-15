@@ -10,7 +10,7 @@ from streamlit_extras import add_vertical_space as avs
 st.set_page_config(page_title="ConcreteXAI",
 				page_icon="Images/logo.webp",
 				layout="wide",
-				initial_sidebar_state="auto")
+				initial_sidebar_state="expanded")
 background("Images/Sidebar.png")
 
 # Hidding the hamburger button
@@ -19,6 +19,8 @@ hide_streamlit_style = """
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 header {visibility:hidden;}
+[data-testid="collapsedControl"] {display: none;}
+[data-testid="stSidebarCollapseButton"] {display: none;}
 </style>
 """
 
@@ -81,7 +83,7 @@ with st.expander(label=":green[Research Group Info]"):
     lottie_animation = load_lottiefile("Gifs/Ironman_animation.json")
     st_lottie(lottie_animation, height=140) # For more information about gifs you can check https://lottiefiles.com/
 
-    col1, col2, col3, col4, col5 = st.columns(5)
+    col1, col2, col3, col4, col5, col6 = st.columns(6)
     
     with col1:
         st.image(image="Images/JAGT1.jpg", caption="PhD. José Alberto Guzmán Torres")
@@ -97,6 +99,9 @@ with st.expander(label=":green[Research Group Info]"):
 
     with col5:
         st.image(image="Images/JGTR1.jpg", caption= "PhD. José Gerardo Tinoco Ruíz")
+
+    with col6:
+        st.image(image="Images/Harias.webp", caption= "PhD. Heriberto Arias Rojas")
 #######################################################################################
 # Contact section
 st.subheader("Contact", divider="rainbow", anchor=False)
