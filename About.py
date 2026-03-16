@@ -18,8 +18,8 @@ hide_streamlit_style = """
 <style>
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
-header {visibility: hidden;}
-[data-testid="collapsedControl"] {visibility: visible;}
+header {background-color: transparent;}
+[data-testid="stToolbar"] {visibility: hidden;}
 </style>
 """
 
