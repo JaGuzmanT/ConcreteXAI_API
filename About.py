@@ -20,6 +20,8 @@ hide_streamlit_style = """
 footer {visibility: hidden;}
 header {background-color: transparent;}
 [data-testid="stToolbar"] {visibility: hidden;}
+[data-testid="stSidebarCollapsedControl"] {visibility: visible !important;}
+[data-testid="stExpandSidebarButton"] {visibility: visible !important;}
 </style>
 """
 
