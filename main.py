@@ -44,9 +44,8 @@ hide_streamlit_style = """
 <style>
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
-header {visibility:hidden;}
-[data-testid="collapsedControl"] {display: none;}
-[data-testid="stSidebarCollapseButton"] {display: none;}
+header {visibility: hidden;}
+[data-testid="collapsedControl"] {visibility: visible;}
 </style>
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
@@ -55,8 +54,6 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 hide_github_icon = """
 <style>
 #GithubIcon {visibility: hidden;}
-footer {visibility: hidden;}
-header {visibility:hidden;}
 </style>
 """
 st.markdown(hide_github_icon, unsafe_allow_html=True)
